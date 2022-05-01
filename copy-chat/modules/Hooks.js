@@ -10,7 +10,13 @@ export const setupHooks = async () => {
   CopyChat.prepareEvent();
   Hooks.on('renderChatMessage', (message, html, speakerInfo) => {
     warn('Processing chat messages...');
+    CopyChat.updateSettings();
+      
     html.children('header').prepend("<a class='button message-copy'><i class='fas fa-copy'></i></a>");
+    
+    if(CopyChat.copyNewJournal){
+      $('<a class="button message-copy"><i class="fas fa-book-medical"></i></a>').insertAfter(html.children('header').find("a.button.message-copy"));
+    }   
   });
 };
 export const initHooks = async () => {

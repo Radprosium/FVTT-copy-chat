@@ -14,7 +14,7 @@ export const setupHooks = async () => {
       
     html.children('header').prepend("<a class='button message-copy'><i class='fas fa-copy'></i></a>");
     
-    if(CopyChat.copyNewJournal){
+    if(CopyChat.copyNewJournal && game.data.users.find((element) => element._id == game.userId).role){
       $('<a class="button message-copy"><i class="fas fa-book-medical"></i></a>').insertAfter(html.children('header').find("a.button.message-copy"));
     }   
   });

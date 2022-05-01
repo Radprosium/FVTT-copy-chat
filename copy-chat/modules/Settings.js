@@ -22,7 +22,7 @@ export const registerSettings = function() {
     type: Boolean,
   });
   game.settings.register(MODULE_NAME, 'copy-chat-new-journal', {
-    name: 'Copy Chat to new journal entry',
+    name: '(GM)Copy Chat to new journal entry',
     hint: 'This setting adds a copy to new journal e clickable icon.',
     scope: 'client',
     config: true,
@@ -30,7 +30,7 @@ export const registerSettings = function() {
     type: Boolean,
   });
   game.settings.register(MODULE_NAME, 'copy-chat-new-journal-autoopen', {
-    name: 'Open created journal entry',
+    name: '(GM)Open created journal entry',
     hint: 'This setting Automatically opens the new journal entry created with "Copy Chat to new journal entry"',
     scope: 'client',
     config: true,

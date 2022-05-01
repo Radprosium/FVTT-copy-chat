@@ -1,8 +1,8 @@
 {
-  "name": "copy-chat",
-  "title": "Copy Chat",
+  "name": "copy-chat-extended",
+  "title": "Copy Chat Extended",
   "description": "Adds the ability to copy text from the chat window to your local clipboard, or to a new journal entry",
-  "author": "Ape-Fink",
+  "author": "Radprosium",
   "authors": [],
   "url": "https://github.com/Radprosium/FVTT-copy-chat",
   "flags": {},
